@@ -33,3 +33,30 @@
 	font-size: 12px;
   color: #fff;
 }
+
+.box{
+    border: none;
+    margin: 5px 0px;
+    padding: min(20%, 50px);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.119);
+
+}
+
+.color-success{
+    color: rgb(0, 190, 0);
+    font-size: 1.4rem;
+}
+
+.color-primary{
+    color:rgb(0, 158, 190);
+    font-size: 1.4rem;
+}
+
+body{
+    background-color: rgb(255, 251, 244);
+}

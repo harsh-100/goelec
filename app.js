@@ -47,19 +47,20 @@ app.get("/compose",function(req,res){
 
 app.post("/compose",function(req,res){
    var post={
-     title : req.body.postTitle,
-     content : req.body.postArea
+     name : req.body.inputName,
+     address : req.body.inputAddress,
+     phone : req.body.inputPhone,
+     message : req.body.inputMessage
    } 
    posts.push(post);
- 
-  
+
   res.redirect("/")
 
 })
 
 app.get("/post/:postName",function(req,res){
   posts.forEach(function(post){
-    const givenTitle = _.lowerCase(post.title)
+    const givenTitle = _.lowerCase(post.name)
     const searchTitle = _.lowerCase(req.params.postName)
     if(searchTitle===givenTitle)
     {
